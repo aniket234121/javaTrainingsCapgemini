@@ -7,5 +7,7 @@ class CarMain{
 		Car c2=new Car("Brezza","vitara","3000HP");
 		System.out.println(c1);
 		System.out.println(c2);
+		int arr[]=new int[0];
+		
 	}
 }

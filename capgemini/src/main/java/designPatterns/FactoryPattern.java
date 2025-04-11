@@ -20,4 +20,12 @@ public class FactoryPattern {
     {
         return new FactoryPattern(var1,var2);
     }
+
+    @Override
+    public String toString() {
+        return "FactoryPattern{" +
+                "var1='" + var1 + '\'' +
+                ", var2='" + var2 + '\'' +
+                '}';
+    }
 }

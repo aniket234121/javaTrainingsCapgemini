@@ -22,4 +22,12 @@ public class SingletonPattern {
         }
         return instance;
     }
+
+    @Override
+    public String toString() {
+        return "SingletonPattern{" +
+                "dbName='" + dbName + '\'' +
+                ", password=" + password +
+                '}';
+    }
 }
