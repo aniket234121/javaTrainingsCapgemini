@@ -1,4 +1,6 @@
-package DataStructures;
+package DataStructures.LinkedList.DoublyLL;
+
+import DataStructures.LinkedList.Node;
 
 public class DoublyLinkedList {
     Node head;
@@ -29,8 +31,6 @@ public class DoublyLinkedList {
         current.prev=null;
         size--;
     }
-
-
     public void removeAtIndex(int index) {
         if(head == null) {
             System.out.println("List is empty");
@@ -71,7 +71,6 @@ public class DoublyLinkedList {
     public int size() {
         return size;
     }
-
     public void addAtIndex(int data,int index)
     {
         if(size==0)
@@ -104,7 +103,6 @@ public class DoublyLinkedList {
         size++;
 
     }
-
     public void addFirst(int data) {
         Node newNode=new Node(data);
 
@@ -136,8 +134,6 @@ public class DoublyLinkedList {
         size++;
 
     }
-
-
     public String toString()
     {
         if(size==0)
@@ -154,5 +150,32 @@ public class DoublyLinkedList {
         ans+=temp.data+"]";
         return ans;
     }
+    public void reverse()
+    {
+        Node current=head;
+        if(head==null)
+        {
+            System.out.println("List is empty");
+            return;
+        }
+        if(head.next==null)
+        {
+            return;
+        }
+        while(current.next!=null)
+        {
+            Node nextNode=current.next;
+            Node temp=current.next;
+            current.next=current.prev;
+            current.prev=nextNode;
+            current=nextNode;
+        }
+            head=current;
+            Node nextNode=current.next;
+            Node temp=current.next;
+            current.next=current.prev;
+            current.prev=nextNode;
+            current=nextNode;
 
+    }
 }

@@ -1,4 +1,6 @@
-package DataStructures;
+package DataStructures.LinkedList.SIngleLL;
+
+import DataStructures.LinkedList.Node;
 
 public class LinkedList {
 
