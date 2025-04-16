@@ -1,6 +1,6 @@
 package DataStructures.LinkedList.DoublyLL;
 
-import DataStructures.LinkedList.Node;
+import DataStructures.Node;
 
 public class DoublyLinkedList {
     Node head;
