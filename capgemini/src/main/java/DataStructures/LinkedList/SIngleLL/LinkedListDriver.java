@@ -1,4 +1,4 @@
-package DataStructures;
+package DataStructures.LinkedList.SIngleLL;
 
 public class LinkedListDriver {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package DataStructures;
+package DataStructures.LinkedList.DoublyLL;
 
 public class DoublyLinkedListDriver {
     public static void main(String[] args) {
@@ -18,6 +18,8 @@ public class DoublyLinkedListDriver {
         list.removeLast();
         System.out.println(list);
         list.removeAtIndex(3);
+        System.out.println(list);
+        list.reverse();
         System.out.println(list);
     }
 }
