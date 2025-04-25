@@ -2,8 +2,8 @@ package DataStructures.LinkedList.DoublyLL;
 
 import DataStructures.Node;
 
-public class DoublyLinkedList {
-    Node head;
+public class DoublyLinkedList<T> {
+    Node<T> head;
     int size;
 
     public void removeFirst() {
@@ -11,7 +11,7 @@ public class DoublyLinkedList {
             System.out.println("List is empty");
             return;
         }
-        Node temp = head;
+        Node<T> temp = head;
         head = head.next;
         head.prev = null;
         temp.next = null;
@@ -22,11 +22,11 @@ public class DoublyLinkedList {
             System.out.println("List is empty");
             return;
         }
-        Node current = head;
+        Node<T> current = head;
         while(current.next != null) {
             current = current.next;
         }
-        Node prev = current.prev;
+        Node<T> prev = current.prev;
         prev.next = null;
         current.prev=null;
         size--;
@@ -49,14 +49,14 @@ public class DoublyLinkedList {
             System.out.println("Index out of bounds");
             return;
         }
-        Node current = head;
+        Node<T> current = head;
         while(index!=0)
         {
             current = current.next;
             index--;
         }
-        Node prevNode = current.prev;
-        Node nextNode=current.next;
+        Node<T> prevNode = current.prev;
+        Node<T> nextNode=current.next;
 
         prevNode.next=nextNode;
         nextNode.prev=prevNode;
@@ -88,14 +88,14 @@ public class DoublyLinkedList {
             System.out.println("Index out of bounds");
             return;
         }
-        Node newNode = new Node(data);
-        Node current=head;
+        Node<T> newNode = new Node(data);
+        Node<T> current=head;
         while(index!=0)
         {
             current=current.next;
             index--;
         }
-        Node previous=current.prev;
+        Node<T> previous=current.prev;
         previous.next=newNode;
         newNode.prev=previous;
         newNode.next=current;
@@ -104,7 +104,7 @@ public class DoublyLinkedList {
 
     }
     public void addFirst(int data) {
-        Node newNode=new Node(data);
+        Node<T> newNode=new Node(data);
 
         if(head==null) {
             head=newNode;
@@ -118,13 +118,13 @@ public class DoublyLinkedList {
     }
     public void addLast(int data)
     {
-        Node newNode=new Node(data);
+        Node<T> newNode=new Node(data);
         if(head==null) {
             head=newNode;
             size++;
             return;
         }
-        Node current=head;
+        Node<T> current=head;
         while(current.next!=null)
         {
             current=current.next;
@@ -141,7 +141,7 @@ public class DoublyLinkedList {
             return "[]";
         }
         String ans="[";
-        Node temp=head;
+        Node<T> temp=head;
         while(temp.next!=null)
         {
             ans+=temp.data+",";
@@ -152,7 +152,7 @@ public class DoublyLinkedList {
     }
     public void reverse()
     {
-        Node current=head;
+        Node<T> current=head;
         if(head==null)
         {
             System.out.println("List is empty");
@@ -164,15 +164,15 @@ public class DoublyLinkedList {
         }
         while(current.next!=null)
         {
-            Node nextNode=current.next;
-            Node temp=current.next;
+            Node<T> nextNode=current.next;
+//            Node<T> temp=current.next;
             current.next=current.prev;
             current.prev=nextNode;
             current=nextNode;
         }
             head=current;
-            Node nextNode=current.next;
-            Node temp=current.next;
+            Node<T> nextNode=current.next;
+//            Node<T> temp=current.next;
             current.next=current.prev;
             current.prev=nextNode;
             current=nextNode;

@@ -1,14 +1,14 @@
 package DataStructures;
 
-public class Node {
-    public int data;
-    public Node next;
-    public Node prev;
-    public Node(int data)
+public class Node<T>{
+    public T data;
+    public Node<T> next;
+    public Node<T> prev;
+    public Node(T data)
     {
         this.data=data;
     }
-    public Node(int data, Node next, Node prev)
+    public Node(T data, Node<T> next, Node<T> prev)
     {
         this.data=data;
         this.next=next;

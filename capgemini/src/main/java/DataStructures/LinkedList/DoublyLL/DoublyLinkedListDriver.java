@@ -2,7 +2,7 @@ package DataStructures.LinkedList.DoublyLL;
 
 public class DoublyLinkedListDriver {
     public static void main(String[] args) {
-        DoublyLinkedList list=new DoublyLinkedList();
+        DoublyLinkedList<Integer> list=new DoublyLinkedList<>();
         list.addFirst(12);
         list.addFirst(13);
         list.addFirst(14);
