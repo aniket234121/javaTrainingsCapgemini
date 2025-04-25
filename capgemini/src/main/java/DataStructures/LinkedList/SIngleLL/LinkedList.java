@@ -2,7 +2,7 @@ package DataStructures.LinkedList.SIngleLL;
 
 import DataStructures.Node;
 
-public class LinkedList {
+public class LinkedList<T> {
 
     Node head;
     int length=0;
@@ -12,7 +12,7 @@ public class LinkedList {
     public int get(int data)
     {
         int index=0;
-        Node temp=head;
+        Node<Integer> temp=head;
         while(temp!=null)
         {
             if(temp.data==data)
@@ -29,7 +29,7 @@ public class LinkedList {
         Node temp=head;
         while(temp!=null)
         {
-            if(temp.data==val)
+            if(temp.data.equals(val))
             {
                 return true;
             }temp=temp.next;
@@ -101,7 +101,7 @@ public class LinkedList {
         length++;
     }
 public int deleteFirst() {
-        int data=head.data;
+        int data=(int)head.data;
         head=head.next;
 
         length-=1;
@@ -125,7 +125,7 @@ public int deleteFirst() {
         {
             temp=temp.next;
         }
-        Node Todel=temp.next;
+        Node<Integer> Todel=temp.next;
         int value= Todel.data;
         temp.next=Todel.next;
 //        Todel.next=null;
@@ -133,7 +133,7 @@ public int deleteFirst() {
         return value;
     }
     public int deleteLast(){
-        Node temp=head;
+        Node<Integer> temp=head;
         int data;
         if(length<=1)
         {

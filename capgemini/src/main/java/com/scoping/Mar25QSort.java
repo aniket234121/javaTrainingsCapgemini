@@ -25,7 +25,7 @@ public class Mar25QSort {
     {
         String[] names={"Mary","John","Emma"};
         int[] heights={180,165,170};
-//        System.out.println("before Sorting "+Arrays.toString(heights) +" "+ Arrays.toString(names));
+//        System.out.println("before Sorting.Sorting "+Arrays.toString(heights) +" "+ Arrays.toString(names));
         sort(heights,names);
     }
 }

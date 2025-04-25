@@ -8,6 +8,9 @@ public class Main {
 
     public static int checkNegative(int price)
     {
+
+
+
         try {
             if (price < 0) {
                 throw new NegativePriceException();
