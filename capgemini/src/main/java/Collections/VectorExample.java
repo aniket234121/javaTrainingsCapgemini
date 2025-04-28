@@ -17,6 +17,10 @@ public class VectorExample {
         v.add(new Employee(15,"mary", (byte) 24));
         v.add(new Employee(16,"sam", (byte) 29));
 
+        for(int i=0;i<v.size();i++){
+            System.out.println(v.get(i));
+        }
+
         ListIterator<Employee> iterator = v.listIterator();
         while (iterator.hasNext()) {
             Employee employee = iterator.next();
