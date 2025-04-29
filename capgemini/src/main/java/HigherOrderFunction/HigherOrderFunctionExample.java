@@ -8,6 +8,7 @@ public class HigherOrderFunctionExample {
     public static void m1(Task t) {
         t.action();
     }
+
 }
 interface Task{
     void action();
