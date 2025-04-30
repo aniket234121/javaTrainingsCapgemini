@@ -1,6 +1,6 @@
-package MethodReference;
+package Java8.MethodReference;
 
-public class MethodReferenceExample {
+public class MethodReferenceStaticExample {
     public static void main(String[] args) {
         I i=Math::pow;
         System.out.println(i.demo(2,3));

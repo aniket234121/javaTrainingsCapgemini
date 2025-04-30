@@ -1,11 +1,11 @@
-package LambdaExpression;
+package Java8.LambdaExpression;
 
 import java.util.Arrays;
 
 public class LambdaExample {
     public static void main(String[] args) {
         //lambda expression
-        Test add=(a,b)->a+b;
+        Test add=(a,b)->{return a+b;};
         Test sub=(a,b)->a-b;
         Test mul=(a,b)->a*b;
         System.out.println("add "+add.action(10,29)); //calling the method.

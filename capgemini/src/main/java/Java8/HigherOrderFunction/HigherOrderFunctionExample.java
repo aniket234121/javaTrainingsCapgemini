@@ -1,4 +1,4 @@
-package HigherOrderFunction;
+package Java8.HigherOrderFunction;
 
 public class HigherOrderFunctionExample {
     public static void main(String[] args) {

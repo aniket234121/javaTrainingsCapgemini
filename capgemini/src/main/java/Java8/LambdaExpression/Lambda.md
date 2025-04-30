@@ -34,7 +34,10 @@ Major reason for functional programming support in Java.
         (int a, int b) -> {
         int sum = a + b;
         return sum;
+        }
 
 since it is an expression it is mandatory to use semicolon at the end of the expression.
+      
+    Test add=(a,b)->{return a+b;};
 
 examples:- LambdaExpression/LambdaExample.java
