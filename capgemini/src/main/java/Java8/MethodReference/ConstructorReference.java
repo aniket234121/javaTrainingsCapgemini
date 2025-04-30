@@ -1,4 +1,4 @@
-package MethodReference;
+package Java8.MethodReference;
 
 public class ConstructorReference {
     public static void main(String[] args) {
@@ -12,7 +12,9 @@ class Employee{
     String name;
     Integer age;
 
-    //Contructor of employee
+    public Employee() {
+        System.out.println("Employee Constructor");
+    }
     public Employee(String name, Integer age){
         this.name=name;
         this.age=age;
