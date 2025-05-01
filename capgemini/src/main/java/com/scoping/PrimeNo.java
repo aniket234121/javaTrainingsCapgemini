@@ -3,7 +3,7 @@ package com.scoping;
 import java.util.Scanner;
 
 public class PrimeNo {
-    public static void primeNo(int num) {
+    public static boolean primeNo(int num) {
         int temp=num;
 
         int count=0;
@@ -14,7 +14,11 @@ public class PrimeNo {
             temp--;
         }
         if(count<=2)
-            System.out.println(num+" prime no.");
+        {
+//            System.out.println(num+" prime no.");
+            return true;}
+        else
+            return false;
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
