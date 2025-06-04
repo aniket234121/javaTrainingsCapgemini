@@ -1,3 +1,4 @@
+
 public class Example extends Example2 implements I1,I2{
 
     public static void main(String[] args) {
