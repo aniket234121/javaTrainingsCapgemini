@@ -35,5 +35,73 @@
 | equals(otherDate)   | Checks if this date is equal to the specified date            | `date.equals(otherDate)`        |
 | toString()          | Converts the date                                             |                                 |
 
+
+# Java `LocalDate` Task List (Easy to Hard)
+
+A series of tasks to practice and master the `LocalDate` class in Java.
+
+---
+
+## ✅ Task 1: Basic LocalDate Creation and Formatting (Easy)
+
+Write a method to:
+
+- Create today’s date.
+- Create a specific date (e.g., `1995-08-20`).
+- Format both dates in the `"dd-MM-yyyy"` pattern.
+
+---
+
+## ✅ Task 2: Date Arithmetic (Moderate)
+
+Write a method that:
+
+- Takes a `LocalDate` input.
+- Adds 45 days.
+- Subtracts 3 months.
+- Returns the resulting date.
+
+---
+
+## ✅ Task 3: Check for Recurring Events (Moderate)
+
+Write a method that:
+
+- Takes two inputs: a `LocalDate` of a birthday and today’s date.
+- Checks if today is that birthday (ignoring the year).
+- Returns `true` if it is, otherwise `false`.
+
+---
+
+## ✅ Task 4: List All Mondays in a Given Month (Intermediate)
+
+Write a method that:
+
+- Takes a year and month as input.
+- Returns a list of all dates that fall on a **Monday** in that month.
+
+💡 *Hint*: Use `TemporalAdjusters` and `DayOfWeek.MONDAY`.
+
+---
+
+## ✅ Task 5: Date Range Validation & Counting (Hard)
+
+Write a method that:
+
+- Takes two `LocalDate` inputs: `startDate` and `endDate`.
+- Validates that `startDate` is before `endDate`.
+- Counts how many **Saturdays** and **Sundays** fall within the date range.
+- Returns the counts using either a custom class or a `Map<String, Integer>`.
+
+---
+
+🎯 **Instructions**:
+1. Implement each task using Java 8 or later.
+2. Submit your code for review.
+3. Receive tips and performance suggestions for writing efficient and clean date-related logic.
+
+Happy Coding! 🚀
+
+
 # LocalTime
 
