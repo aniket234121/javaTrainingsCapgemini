@@ -1,4 +1,4 @@
-
+# Java Prepration  
 ---
 
 ## 🧠 Purpose
@@ -60,7 +60,7 @@ Each package focuses on a specific Java concept and contains:
 
 - Located in `src/test/java`
 - Includes unit tests (currently for Java8 `DateTimeApi`)
-- Follows standard Maven/Gradle layout
+- Follows standard Maven layout
 
 ---
 
@@ -68,4 +68,4 @@ Each package focuses on a specific Java concept and contains:
 
 1. Clone the repo:
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/aniket234121/javaTrainingsCapgemini.git
