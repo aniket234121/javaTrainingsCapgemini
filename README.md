@@ -1,11 +1,11 @@
 # Java Prepration  
----
+
 
 ## 🧠 Purpose
 
 This repository serves as a **complete reference and hands-on coding hub** for Java learners, interview prep, and concept revision. Whether you're a beginner or preparing for a job, each topic is modular, annotated, and explained through code and markdowns.
 
----
+
 
 ## 🗂️ Package Breakdown
 
@@ -54,7 +54,7 @@ Each package focuses on a specific Java concept and contains:
 | `OptionalClasses`         | Avoiding nulls using `Optional`                                        |
 | `StreamAPI`               | Filtering, mapping, reducing, and collectors                           |
 
----
+
 
 ## 🧪 Test Directory
 
@@ -62,7 +62,7 @@ Each package focuses on a specific Java concept and contains:
 - Includes unit tests (currently for Java8 `DateTimeApi`)
 - Follows standard Maven layout
 
----
+
 
 ## 🚀 How to Run
 
