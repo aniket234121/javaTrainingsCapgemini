@@ -1,6 +1,6 @@
 package Java8.DateTimeApi;
 
-import Java8.DateTimeApi.LocalDateExample;
+import Java8.DateTimeApi.LocalDate.LocalDateExample;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
