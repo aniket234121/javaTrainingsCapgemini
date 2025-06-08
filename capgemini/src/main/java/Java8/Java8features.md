@@ -11,6 +11,7 @@ concise code
   * Function
   * Consumer
   * Supplier
+  * BiFunction,BiPredicate,UnaryOperator,BinaryOperator
   * etc.
 * Method Reference ( :: double colon operator)
   * constructor reference
