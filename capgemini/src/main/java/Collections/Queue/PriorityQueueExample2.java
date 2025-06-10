@@ -1,10 +1,10 @@
-package Collections;
+package Collections.Queue;
 
 import org.example.Employee;
 
 import java.util.PriorityQueue;
 
-public class PriorityQueueExample {
+public class PriorityQueueExample2 {
     public static void main(String[] args) {
         PriorityQueue<Employee> priorityQueue = new PriorityQueue<>((Employee e1,Employee e2)->e1.getAge()-e2.getAge());
         Employee e1=new Employee(12,"ram",(byte)23);

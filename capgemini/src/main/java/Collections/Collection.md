@@ -1,4 +1,12 @@
+# Collections
+
+## Hierarchy
 ![img.png](img.png)
+
+## Detailed description of collection framework hierarchy
+
+![img_2.png](img_2.png)
+
 `Iterable Interface`
 Iterable Interface is the topmost interface in java.
 1. It have a **Iterator interface** which is having has a relationship
