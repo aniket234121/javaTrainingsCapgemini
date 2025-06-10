@@ -66,6 +66,7 @@ implement Comparable) or by a custom Comparator provided at queue construction.
 * Allows duplicate elements.
 
 ### Constructors
+
 | Constructor Signature            | Description                     |
 |----------------------------------|---------------------------------|
 | `PriorityQueue()`                | Natural order, default capacity |
@@ -74,3 +75,63 @@ implement Comparable) or by a custom Comparator provided at queue construction.
 | `PriorityQueue(Collection)`      | Initialize from a collection    |
 | `PriorityQueue(PriorityQueue)`   | Copy another priority queue     |
 | `PriorityQueue(SortedSet)`       | Initialize from sorted set      |
+
+## Deque < Interface>
+
+The Deque interface in Java is a part of the Java Collections Framework and is used to represent a double-ended queue.
+
+This means you can insert and remove elements from both ends — front and rear.
+
+Key Features of Deque
+
+* Extends Queue interface.
+* Allows insertion and removal at both ends.
+* Supports LIFO (stack) and FIFO (queue) operations.
+* Can be bounded (capacity-limited) or unbounded.
+* Null elements are not allowed in most implementations like ArrayDeque
+
+### Common Implementations
+
+1. ArrayDeque (most used, fast and efficient)
+2. LinkedList (also implements Deque)
+3. ConcurrentLinkedDeque (for concurrent access)
+
+#### Methods
+
+| Method                            | Description                                                                |
+|-----------------------------------|----------------------------------------------------------------------------|
+| `addFirst(E e)`                   | Inserts the specified element at the front of the deque                    |
+| `addLast(E e)`                    | Inserts the specified element at the rear of the deque                     |
+| `offerFirst(E e)`                 | Offers to insert the element at the front; returns `false` on failure      |
+| `offerLast(E e)`                  | Offers to insert the element at the rear; returns `false` on failure       |
+| `removeFirst()`                   | Removes and returns the first element of the deque                         |
+| `removeLast()`                    | Removes and returns the last element of the deque                          |
+| `pollFirst()`                     | Removes and returns the first element, or returns `null` if empty          |
+| `pollLast()`                      | Removes and returns the last element, or returns `null` if empty           |
+| `getFirst()`                      | Retrieves the first element without removing it; throws exception if empty |
+| `getLast()`                       | Retrieves the last element without removing it; throws exception if empty  |
+| `peekFirst()`                     | Retrieves the first element or `null` if empty                             |
+| `peekLast()`                      | Retrieves the last element or `null` if empty                              |
+| `removeFirstOccurrence(Object o)` | Removes the first occurrence of the specified element                      |
+| `removeLastOccurrence(Object o)`  | Removes the last occurrence of the specified element                       |
+| `push(E e)`                       | Pushes an element onto the stack represented by the deque (front)          |
+| `pop()`                           | Pops an element from the stack represented by the deque (front)            |
+| `descendingIterator()`            | Returns an iterator over elements in reverse order                         |
+
+## 1. ArrayDeque
+
+In Java, the ArrayDeque is a resizable array implementation of the Deque interface, which stands for double-ended queue.
+It allows elements to be added or removed from both ends efficiently. It can be used as a stack (LIFO) or a queue (
+FIFO).
+
+* ArrayDeque grows dynamically.
+* It generally provides faster operations than LinkedList because it does not have the overhead of node management.
+* Operations like addFirst(), addLast(), removeFirst(), removeLast() are all done in constant time O(1).
+* The ArrayDeque class implements these two interfaces Queue interface and Deque interface. support concurrent access by
+  multiple threads
+
+| Constructor                             | Description                                                     |
+|-----------------------------------------|-----------------------------------------------------------------|
+| `ArrayDeque()`                          | Creates an empty deque with default capacity                    |
+| `ArrayDeque(int numElements)`           | Creates a deque with initial capacity                           |
+| `ArrayDeque(Collection<? extends E> c)` | Creates a deque containing the elements of the given collection |
